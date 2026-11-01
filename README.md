@@ -1,32 +1,31 @@
-# React + TypeScript + Vite
+# Cotizador de Criptomonedas - Web (React JS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Este proyecto contiene la interfaz web de la aplicación para cotizar criptomonedas. Fue desarrollado utilizando React JS y forma parte de un proyecto integrado cuya contraparte móvil está construida en React Native.
 
-Currently, two official plugins are available:
+## Requisitos Previos
+* Node.js instalado en el sistema.
+* Gestor de paquetes npm (se incluye al instalar Node.js).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Instalación
+1. Clona el repositorio desde GitHub.
+2. Abre tu terminal y navega al directorio del proyecto web:
+   ```bash
+   cd web
+   ```
+3. Instala las dependencias necesarias:
+   ```bash
+   npm install
+   ```
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Ejecución Local
+Para iniciar el servidor de desarrollo, asegúrate de estar dentro de la carpeta del proyecto y ejecuta el siguiente comando:
+```bash
+npm start
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+La aplicación se abrirá automáticamente en tu navegador predeterminado en la dirección `http://localhost:3000`. El proyecto cuenta con recarga en vivo (hot-reload), por lo que si haces ediciones en el código, la página se actualizará por sí sola para mostrar los cambios.
+
+## Tecnologías Principales
+* React JS
+* CSS3
+* Git / GitHub para control de versiones
