@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
+import Formulario from './components/Formulario'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,10 +9,13 @@ function App() {
     <div className='contenido-grid'>
       {/*logo img*/}
       {/*Formulario*/}
+      <Formulario
+      count={count}
+      setCount={setCount}
+      />
       {/*mensaje de error*/}
       {/*spiner*/}
       {/*cotizacion*/}
-      <h1>Hola mundo</h1>
     </div>
   )
 }
